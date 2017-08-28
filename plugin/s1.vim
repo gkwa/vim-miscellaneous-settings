@@ -4,6 +4,7 @@ let s:is_windows = has('win16') || has('win32') || has('win64')
 " flash screen instead of sounding a beep
 set visualbell
 
+set relativenumber
 set nostartofline
 set tabstop=2
 set shiftwidth=2
@@ -23,7 +24,6 @@ set hlsearch
 
 set wildmenu
 
-"
 set hidden
 
 " show numbered lines
@@ -109,9 +109,6 @@ endif
 " https://gist.github.com/KevinSjoberg/5068370
 let g:netrw_localrmdir='rm -r'
 
-" https://jeffkreeftmeijer.com/2012/relative-line-numbers-in-vim-for-super-fast-movement/
-:au FocusLost * :set number
-:au FocusGained * :set relativenumber
 
 " http://vim.wikia.com/wiki/Open_file_under_cursor
 " To have a space (ASCII 32) considered as a valid character for a file name,
