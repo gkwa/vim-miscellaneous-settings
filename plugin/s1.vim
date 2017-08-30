@@ -54,6 +54,7 @@ command! -nargs=1 -complete=help H :enew | :set buftype=help | :h <args>
 " http://vim.wikia.com/wiki/Set_working_directory_to_the_current_file
 " set workng directory to directory of current buffer
 nnoremap ,cd :cd %:p:h<CR>:pwd<CR>
+nnoremap <leader>cd <c-^>:pwd<cr>
 
 " https://stackoverflow.com/a/954336/1495086
 " :h filename-modifiers
