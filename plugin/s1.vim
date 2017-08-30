@@ -111,9 +111,10 @@ let g:netrw_localrmdir='rm -r'
 
 
 " http://vim.wikia.com/wiki/Open_file_under_cursor
-" To have a space (ASCII 32) considered as a valid character for a file name,
-" add the following to your vimrc:
-:set isfname+=32
+" On Windows, the default 'isfname' includes a colon. If you do not use
+" drive letters to identify files, you could remove the colon with the
+" command:
+set isfname-=:
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://howivim.com/2016/damian-conway/
 
