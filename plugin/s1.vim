@@ -24,6 +24,7 @@ set hlsearch
 
 set wildmenu
 
+" allow switching from buffer without saving first
 set hidden
 
 " show numbered lines
@@ -136,6 +137,3 @@ call matchadd('ColorColumn', '\%81v', 100)
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnoremap // y/<C-R>"<CR>
 
-" Edit yaml without indent
-" https://stackoverflow.com/a/37488992/1495086
-autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
