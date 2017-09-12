@@ -135,15 +135,15 @@ call matchadd('ColorColumn', '\%81v', 100)
 " http://vim.wikia.com/wiki/Search_for_visually_selected_text
 vnoremap // y/<C-R>"<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
-" This will keep your cursor centered when you start up, move to another
-" window, add or remove windows or tabs, or resize the GUI. You can disable it
-" during your session with
-" au! VCenterCursor
-
-augroup VCenterCursor
-  au!
-  au BufEnter,WinEnter,WinNew,VimResized *,*.*
-        \ let &scrolloff=winheight(win_getid())/2
-augroup END
+" " http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
+" " This will keep your cursor centered when you start up, move to another
+" " window, add or remove windows or tabs, or resize the GUI. You can disable it
+" " during your session with
+" " au! VCenterCursor
+"
+" augroup VCenterCursor
+"   au!
+"   au BufEnter,WinEnter,WinNew,VimResized *,*.*
+"         \ let &scrolloff=winheight(win_getid())/2
+" augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
