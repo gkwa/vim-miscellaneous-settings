@@ -111,7 +111,6 @@ endif
 " https://gist.github.com/KevinSjoberg/5068370
 let g:netrw_localrmdir='rm -r'
 
-
 " http://vim.wikia.com/wiki/Open_file_under_cursor
 " On Windows, the default 'isfname' includes a colon. If you do not use
 " drive letters to identify files, you could remove the colon with the
@@ -128,7 +127,6 @@ if has('persistent_undo')
     set undodir=$HOME/.vimundo
     set undofile
 endif
-
 "====[ Make the 81st column stand out ]====================
 " https://github.com/ninrod/damian_conway_oscon_2013_tarball/tree/2c22b94f35348b2cf56337cecd412e6f701fa2db#damian-conways-more-instantly-better-vim-oscon-2013-talk
 highlight ColorColumn ctermbg=magenta
@@ -138,15 +136,15 @@ call matchadd('ColorColumn', '\%81v', 100)
 vnoremap // y/<C-R>"<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://vim.wikia.com/wiki/Keep_your_cursor_centered_vertically_on_the_screen
+" This will keep your cursor centered when you start up, move to another
+" window, add or remove windows or tabs, or resize the GUI. You can disable it
+" during your session with
+" au! VCenterCursor
+
 augroup VCenterCursor
   au!
   au BufEnter,WinEnter,WinNew,VimResized *,*.*
         \ let &scrolloff=winheight(win_getid())/2
 augroup END
-
-" This will keep your cursor centered when you start up, move to another
-" window, add or remove windows or tabs, or resize the GUI. You can disable it
-" during your session with
-" au! VCenterCursor
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
