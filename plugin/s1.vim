@@ -147,4 +147,3 @@ augroup VCenterCursor
         \ let &scrolloff=winheight(win_getid())/2
 augroup END
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
