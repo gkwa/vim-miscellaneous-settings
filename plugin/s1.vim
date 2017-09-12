@@ -61,6 +61,16 @@ nnoremap <leader>cd <c-^>:pwd<cr>
 " :h filename-modifiers
 nmap cp :let @" = expand("%")
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" https://robots.thoughtbot.com/vim-splits-move-faster-and-more-naturally
+" We can use different key mappings for easy navigation between splits to save
+" a keystroke. So instead of ctrl-w then j, it’s just ctrl-j:
+
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " http://vim.wikia.com/wiki/Open_the_directory_for_the_current_file_in_Windows
 " Open windows explorer on directory for current file
 map <C-e> :silent !explorer %:p:h:gs?\/?\\\\\\?<CR>
