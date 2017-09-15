@@ -214,3 +214,9 @@ endfunction
 nnoremap <silent> + :exe "resize " . (winheight(0) * 3/2)<CR>
 nnoremap <silent> - :exe "resize " . (winheight(0) * 2/3)<CR>
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" When running vim or nvim in docker containers I don't know why but I can
+" never see the colors.  darkblue seems more visible than whatever was
+" default.:w
+
+colorscheme darkblue
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
