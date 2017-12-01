@@ -13,14 +13,14 @@ set nobackup
 set noswapfile
 set nowrap
 
-" http://vimcasts.org/blog/2013/02/habit-breaking-habit-making/
-" For the sake of learning, let’s say that it’s a bad habit to use the h,
-" j, k, and l motions. In that case, you should disable them by putting
-" this snippet in your vimrc:
-noremap h <NOP>
-noremap j <NOP>
-noremap k <NOP>
-noremap l <NOP>
+" " http://vimcasts.org/blog/2013/02/habit-breaking-habit-making/
+" " For the sake of learning, let’s say that it’s a bad habit to use the h,
+" " j, k, and l motions. In that case, you should disable them by putting
+" " this snippet in your vimrc:
+" noremap h <NOP>
+" noremap j <NOP>
+" noremap k <NOP>
+" noremap l <NOP>
 
 " ignore case
 set ic
